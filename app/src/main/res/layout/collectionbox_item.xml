@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="90dp">
+
+
+    <TextView
+        android:text="测试测试"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/box_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+    <TextView
+        android:textSize="12sp"
+        android:layout_below="@id/box_name"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#9A9A9A"
+        android:text="0 篇 · 0 人关注 · 用户名"/>
+
+
+    <ImageView
+        android:src="@mipmap/go"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_centerVertical="true"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:tint="#9A9A9A" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="#CACACA"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+
+
+</RelativeLayout>
