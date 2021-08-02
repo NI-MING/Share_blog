@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.GetBlogActivity">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.wlk.myblog.wight.FocusedTextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/blog_title"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/back"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:singleLine="true"
+            android:text="浅谈Kotlin语法篇之基础语法(一)"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/collection"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/shape_cir_theme_red"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@mipmap/add_box" />
+
+        <ImageView
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@drawable/shape_cir_theme_white"
+            app:tint="@color/my_blue"
+            android:id="@+id/back"
+            android:src="@mipmap/back"
+            android:layout_marginLeft="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/blog_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
