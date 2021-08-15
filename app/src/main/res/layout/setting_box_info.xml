@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:background="@color/white"
+    android:layout_height="150dp">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                app:tint="#8E8E8E"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/delete"
+                android:clickable="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/shape_cir_theme_red"
+                android:src="@mipmap/delete"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="17dp"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/delete"
+                android:layout_marginTop="5dp"
+                android:text="删除" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                app:tint="#8E8E8E"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/edit"
+                android:clickable="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/shape_cir_theme_grey"
+                android:src="@mipmap/edit"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="19dp"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit"
+                android:layout_marginTop="5dp"
+                android:text="编辑" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
